@@ -1,0 +1,21 @@
+{
+  "name": "tree-db-schema",
+  "version": "1.0.0",
+  "author": "Xander Dumaine <xander.dumaine@lifeomic.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "validate": "yarn graphql-inspector validate 'documents/*.gql' schema/schema.gql",
+    "watch": "nodemon -e gql --exec yarn validate",
+    "serve": "yarn graphql-inspector serve schema/schema.gql"
+  },
+  "dependencies": {
+    "@graphql-codegen/cli": "^2.12.0",
+    "graphql": "^16.6.0",
+    "typescript": "^4.8.2"
+  },
+  "devDependencies": {
+    "@graphql-inspector/cli": "3.0.0",
+    "nodemon": "^2.0.19"
+  }
+}

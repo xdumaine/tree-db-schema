@@ -1,0 +1,27 @@
+fragment FullGenus on Genus {
+  name
+  commonNames
+  speciesCount
+  species {
+    name
+    commonNames
+  }
+}
+
+query GetGenera {
+  genera {
+    ...FullGenus
+  }
+}
+
+query GetSpecies {
+  species {
+    name
+    commonNames
+    genus {
+      name
+      commonNames
+      speciesCount
+    }
+  }
+}
