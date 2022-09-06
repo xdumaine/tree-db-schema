@@ -97,3 +97,21 @@ type Query {
   species: [Species!]!
   observations: [Observation]!
 }
+
+input LocationInput {
+  latitude: String!
+  longitude: String!
+  exact: Boolean!
+}
+
+input ObservationInput {
+  species: String
+  genus: String
+  leafType: LeafType
+  location: LocationInput
+  description: String!
+}
+
+type Mutation {
+  observation (input: ObservationInput): Observation
+}

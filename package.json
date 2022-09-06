@@ -7,7 +7,8 @@
   "scripts": {
     "validate": "yarn graphql-inspector validate 'documents/*.gql' schema/schema.gql",
     "watch": "nodemon -e gql --exec yarn validate",
-    "serve": "yarn graphql-inspector serve schema/schema.gql"
+    "serve": "yarn graphql-inspector serve schema/schema.gql",
+    "diff": "yarn add tree-db-schema@latest && yarn graphql-inspector diff node_modules/tree-db-schema/schema/schema.gql ./schema/schema.gql"
   },
   "dependencies": {
     "@graphql-codegen/cli": "^2.12.0",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@graphql-inspector/cli": "3.0.0",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "tree-db-schema": "^1.0.0"
   }
 }

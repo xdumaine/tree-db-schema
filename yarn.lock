@@ -2666,6 +2666,15 @@ tr46@~0.0.3:
   resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
   integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
 
+tree-db-schema@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tree-db-schema/-/tree-db-schema-1.0.0.tgz#72c133744a6a5aac8ab3d94034f5a830da5ec503"
+  integrity sha512-pzlcJ7NaTPoyAievjJRzeVaGGDTJPoBC+k8e3HZOSwWQLXvm9G8haVqCbesbw6b0VlvHpNFo2ct0iTkgAe26mw==
+  dependencies:
+    "@graphql-codegen/cli" "^2.12.0"
+    graphql "^16.6.0"
+    typescript "^4.8.2"
+
 ts-log@^2.2.3:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/ts-log/-/ts-log-2.2.4.tgz#d672cf904b33735eaba67a7395c93d45fba475b3"
